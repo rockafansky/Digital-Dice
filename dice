@@ -1,0 +1,21 @@
+import random
+
+dice = int(input("How many dice are you rolling? "))
+dicetype = str(input("Which die are you rolling? "))
+
+if dicetype == "d20":
+    print(random.randint(1, 20) * dice)
+elif dicetype == "d100":
+    print(random.randint(1, 10) * 10 * dice)
+elif dicetype == "d12":
+    print(random.randint(1, 12) * dice)
+elif dicetype == "d10":
+    print(random.randint(1, 10) * dice)
+elif dicetype == "d8":
+    print(random.randint(1, 8) * dice)
+elif dicetype == "d6":
+    print(random.randint(1, 6) * dice)
+elif dicetype == "d4":
+    print(random.randint(1, 4) * dice)
+else:
+    print("That's not a kind of die that exists.")
